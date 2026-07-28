@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Group Training Classes — TC Pets</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav">
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="TC Pets logo">
+    TC Pets
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="dog-walking.html">Dog walking and pet sitting</a>
+    <a href="group-classes.html">Training and classes</a>
+    <a href="contact.html">Contact</a>
+    <a href="group-classes.html" class="btn">Book a session</a>
+  </div>
+</div>
+
+<div class="hero" style="height:220px;">
+  <img src="images/group-classes.jpg" alt="Group training class" style="object-position:center 20%;">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 style="font-size:28px;">Group training classes</h1>
+    <p>Learn together, grow together</p>
+  </div>
+</div>
+
+<div class="page-intro">
+  <p>Training classes are a group training setting, with a lesson plan we follow to progress as a group. For picking up the basics at Puppy Class, or starting out with a new activity like Treibball, group classes are the way to go, as everyone will be on the same page. You might even make some friends to practice with outside of classes too.</p>
+</div>
+
+<div class="accordion-wrap">
+  <p style="font-size:13px; font-weight:600; color:var(--muted); margin-bottom:12px;">Our classes cover</p>
+
+  <div class="accordion-item">
+    <button class="accordion-toggle" aria-expanded="true">
+      <p>Puppy classes</p>
+      <span class="chevron">&rsaquo;</span>
+    </button>
+    <div class="accordion-detail" style="display:block;">
+      <p>Foundations for young puppies. Settling into the world, basic manners, and building confidence around people, dogs, and everyday situations.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion-toggle" aria-expanded="false">
+      <p>Doggy manners classes</p>
+      <span class="chevron">&rsaquo;</span>
+    </button>
+    <div class="accordion-detail">
+      <p>For dogs past the puppy stage who need a refresh on the basics. Loose lead walking, recall, and calm behaviour around distractions.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion-toggle" aria-expanded="false">
+      <p>Trick classes</p>
+      <span class="chevron">&rsaquo;</span>
+    </button>
+    <div class="accordion-detail">
+      <p>A fun, low pressure session focused on teaching new tricks. Great for building confidence and strengthening the bond between dog and owner.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion-toggle" aria-expanded="false">
+      <p>Treibball (urban herding)</p>
+      <span class="chevron">&rsaquo;</span>
+    </button>
+    <div class="accordion-detail">
+      <p>Dogs push large exercise balls into a goal, similar to herding sheep. Great mental and physical exercise for high energy or herding breeds.</p>
+    </div>
+  </div>
+</div>
+
+<div class="info-callout">
+  <p>How do I know which type of training to choose?</p>
+  <p>Group classes suit picking up basics or starting a new activity together. One to one sessions are tailored to your dog, home and lifestyle if you need a more individual pace.</p>
+</div>
+
+<div class="cta-row">
+  <a href="contact.html" class="btn">Book here</a>
+</div>
+
+<footer>
+  <p>info.tcpets@gmail.com &nbsp;&nbsp; 07838 403 977</p>
+  <div class="socials">
+    <a href="https://www.instagram.com/tcpetspics?igsh=ZGUzMzM3NWJiOQ==">Instagram</a>
+    <a href="http://www.facebook.com/Info.TCPets">Facebook</a>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.accordion-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    var detail = btn.nextElementSibling;
+    btn.setAttribute('aria-expanded', String(!expanded));
+    detail.style.display = expanded ? 'none' : 'block';
+  });
+});
+</script>
+
+</body>
+</html>
