@@ -176,6 +176,8 @@ a { text-decoration: none; color: inherit; }
   display: block;
 }
 
+.card-img-walking { object-position: center 30%; }
+
 .card-body { padding: 16px; }
 .card-body p:first-child { font-weight: 600; font-size: 15px; color: var(--heading); margin-bottom: 4px; }
 .card-body p:last-child { font-size: 13px; color: var(--muted); line-height: 1.5; }
@@ -323,6 +325,8 @@ footer .socials a:hover { color: var(--terracotta); }
 }
 
 @media (max-width: 768px) {
+  .card-img-walking { object-position: center center; }
+
   .nav { flex-wrap: wrap; padding: 16px 20px; }
 
   .logo { order: 1; }
