@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One to One Training — TC Pets</title>
+<meta name="description" content="Personalised one to one dog training in Heald Green, Cheadle. Sessions tailored to your dog, home and lifestyle. From £75.">
+<link rel="canonical" href="https://www.tcpets.co.uk/one-to-one.html">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav">
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="TC Pets logo">
+    TC Pets
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="dog-walking.html">Dog walking and pet sitting</a>
+    <a href="group-classes.html">Training and classes</a>
+    <a href="advice.html">Advice</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn">Book a session</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+</div>
+
+<div class="hero" style="height:220px;">
+  <img src="images/one-to-one.jpg" alt="One to one dog training" style="object-position:center 20%;">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 style="font-size:28px;">One to one training</h1>
+    <p>Personalised sessions, at your dog's own pace</p>
+  </div>
+</div>
+
+<div class="page-intro">
+  <p>One to one sessions are tailored entirely to your dog, your home, and your lifestyle. Rather than following a group lesson plan, we build a training plan around what you and your dog actually need, whether that is settling in a new puppy, working through specific behaviours, or building confidence at your own pace.</p>
+</div>
+
+<div class="accordion-wrap">
+  <div class="accordion-item">
+    <button class="accordion-toggle" aria-expanded="true">
+      <p>How sessions work</p>
+      <span class="chevron">&rsaquo;</span>
+    </button>
+    <div class="accordion-detail" style="display:block;">
+      <p>Every one to one journey starts with a Pre-Consultation form, so we can understand your dog and what you would like to work on before the first session. From there, sessions are booked in and built around your dog's progress, rather than a fixed group timetable.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion-toggle" aria-expanded="false">
+      <p>Pricing</p>
+      <span class="chevron">&rsaquo;</span>
+    </button>
+    <div class="accordion-detail">
+      <p>Sessions start from £75. Package options are also available, see the <a href="membership.html" style="color:var(--terracotta); text-decoration:underline;">Membership page</a> for full details on Basic, Standard, and Premier packages.</p>
+    </div>
+  </div>
+</div>
+
+<div class="info-callout">
+  <p>Not sure if one to one is right for you?</p>
+  <p>Group classes suit picking up basics or starting a new activity together. One to one sessions are tailored to your dog, home and lifestyle if you need a more individual pace.</p>
+</div>
+
+<div class="cta-row">
+  <a href="contact.html" class="btn">Book here</a>
+</div>
+
+<footer>
+  <p>info.tcpets@gmail.com &nbsp;&nbsp; 07838 403 977</p>
+  <div class="socials">
+    <a href="https://www.instagram.com/tcpetspics?igsh=ZGUzMzM3NWJiOQ==">Instagram</a>
+    <a href="http://www.facebook.com/Info.TCPets">Facebook</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+</footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click', function() {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+document.querySelectorAll('.accordion-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    var detail = btn.nextElementSibling;
+    btn.setAttribute('aria-expanded', String(!expanded));
+    detail.style.display = expanded ? 'none' : 'block';
+  });
+});
+</script>
+
+</body>
+</html>
