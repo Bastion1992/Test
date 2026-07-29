@@ -1,8 +1,8 @@
 :root {
   --cream: #FBF7EF;
   --beige: #EFE6D8;
-  --terracotta: #B5622E;
-  --terracotta-dark: #9A4F23;
+  --terracotta: #0290cb;
+  --terracotta-dark: #027db1;
   --heading: #3B2E22;
   --body-text: #5A4A38;
   --muted: #8C7A63;
@@ -11,15 +11,15 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Quicksand", sans-serif;
   background: var(--cream);
   color: var(--body-text);
 }
 
 h1, h2, h3 {
-  font-family: Georgia, serif;
+  font-family: "Quicksand", sans-serif;
   color: var(--heading);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 a { text-decoration: none; color: inherit; }
@@ -64,9 +64,9 @@ a { text-decoration: none; color: inherit; }
   align-items: center;
   gap: 12px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--heading);
-  font-family: Georgia, serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .logo img { width: 44px; }
